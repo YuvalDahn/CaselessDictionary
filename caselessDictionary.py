@@ -29,7 +29,13 @@ class CaselessDictionary(dict):
             return default
         else:
             return v['val']
-    
+
+    def has_key(self,key):
+        if self.get(key):
+            return True
+        else:
+            return False    
+
     def items(self):
         return [(v['key'], v['val']) for v in dict.itervalues(self)]
     
