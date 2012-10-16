@@ -1,8 +1,10 @@
 class CaselessDictionary(dict):
     """Dictionary that enables case insensitive searching while preserving case sensitivity 
-when keys are listed, ie, via keys() or items() methods. Works behind the scenes by storing 
-original key-value pairs as values (values become dictionaries) and lowercase version of the 
-keys. If that's your cup of tea, enjoy """    
+when keys are listed, ie, via keys() or items() methods. 
+
+Works by storing a lowercase version of the key as the new key and stores the original key-value 
+pair as the key's value (values become dictionaries)."""
+
     def __init__(self, initval={}):
         if isinstance(initval, dict):
             for key, value in initval.iteritems():
