@@ -1,5 +1,5 @@
 # Caseless Dictionary
-**forked from:** [babakness/caselessDictionary.py](https://gist.github.com/3901174.git) (on gist)
+> **forked from:** [babakness/caselessDictionary.py](https://gist.github.com/3901174.git) (on gist)
 
 Dictionary that enables case insensitive searching while preserving case sensitivity 
 when keys are listed, ie, via keys() or items() methods. 
