@@ -12,6 +12,10 @@ pair as the key's value (values become dictionaries).
 >>> d['Aa'] = 'Bb'
 >>> print(d)
 {'Aa': 'Bb'}
+>>> d['aA']
+'Bb'
+>>> d['aa']
+'Bb'
 ```
 but in the background it will be stored as:
 ```python
