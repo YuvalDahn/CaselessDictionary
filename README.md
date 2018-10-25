@@ -6,7 +6,7 @@ when keys are listed, ie, via keys() or items() methods.
 Works by storing a lowercase version of the key as the new key and stores the original key-value 
 pair as the key's value (values become dictionaries).
 
-## Example of how it stores it in the background:
+## Usage Example:
 ```python
 >>> d = CaselessDictionary()
 >>> d['Aa'] = 'Bb'
@@ -17,7 +17,8 @@ pair as the key's value (values become dictionaries).
 >>> d['aa']
 'Bb'
 ```
-but in the background it will be stored as:
+
+### but in the background it will be stored as:
 ```python
 {'aa': {'key': 'Aa', 'val': 'Bb'}}
 ```
